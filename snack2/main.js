@@ -7,5 +7,17 @@ function random(min, max) {
     max = 100
     return Math.floor(Math.random() * (100) + min);
 }
-let numCasuale=random()
-// console.log(numCasuale)
+let numCasuale=random(1, 100)
+console.log(numCasuale)
+let numUtente=0
+while (numUtente !== numCasuale){
+    numUtente=prompt("inserisci un numero")
+    numUtente=parseInt(numUtente)
+    if (numUtente>numCasuale){
+        alert("il numero è troppo alto")
+    }else{
+        alert("il numero è troppo basso")
+    }
+
+}
+alert("hai indovinato il numero")
